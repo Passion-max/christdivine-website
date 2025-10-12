@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChristDivine Academy - Professional ICT Training</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header (same as other pages) -->
+    <header class="header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-bar-content">
+                    <div class="contact-info">
+                        <span><i class="fas fa-phone"></i> +234 803 790 8837</span>
+                        <span><i class="fas fa-envelope"></i> info@christdivine.com</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <div class="logo">
+                        <img src="CD_ACADEMY.png" alt="logo" height="50px" width="350px">
+                    </div>
+                    
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle">Our Businesses <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="main-business.html">Christ Divine Communication</a></li>
+                                <li><a href="academy.html">ChristDivine Academy</a></li>
+                                <li><a href="engineering.html">ChristDivine Engineering</a></li>
+                            </ul>
+                        </li>
+                        <!-- <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="blog.html">Blog</a></li> -->
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section style="background: linear-gradient(135deg, #ff8c00 0%, #ff6600 100%); padding: 100px 0; text-align: center; color: white;">
+        <div class="container">
+            <h1 style="font-size: 48px; margin-bottom: 15px;"><i class="fas fa-graduation-cap"></i> ChristDivine Academy</h1>
+            <p style="font-size: 20px;">Transform Your Career with Professional ICT Training</p>
+        </div>
+    </section>
+
+    <!-- Academy Overview -->
+    <section style="padding: 80px 0;">
+        <div class="container">
+            <div style="max-width: 800px; margin: 0 auto; text-align: center; margin-bottom: 50px;">
+                <h2 style="font-size: 36px; color: #0056b3; margin-bottom: 20px;">Welcome to ChristDivine Academy</h2>
+                <p style="color: #666; font-size: 18px; line-height: 1.8;">
+                    ChristDivine Academy is your gateway to mastering in-demand ICT skills. We offer comprehensive training programs designed to equip you with practical knowledge and industry-recognized certifications. Our experienced instructors and hands-on approach ensure you're job-ready from day one.
+                </p>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; margin-top: 50px;">
+                <div style="text-align: center; padding: 30px; background: #f8f9fa; border-radius: 10px;">
+                    <div style="font-size: 40px; color: #ff8c00; margin-bottom: 15px;"><i class="fas fa-users"></i></div>
+                    <h3 style="font-size: 32px; color: #0056b3; margin-bottom: 5px;">500+</h3>
+                    <p style="color: #666;">Students Trained</p>
+                </div>
+                <div style="text-align: center; padding: 30px; background: #f8f9fa; border-radius: 10px;">
+                    <div style="font-size: 40px; color: #0056b3; margin-bottom: 15px;"><i class="fas fa-book"></i></div>
+                    <h3 style="font-size: 32px; color: #ff8c00; margin-bottom: 5px;">7</h3>
+                    <p style="color: #666;">Training Programs</p>
+                </div>
+                <div style="text-align: center; padding: 30px; background: #f8f9fa; border-radius: 10px;">
+                    <div style="font-size: 40px; color: #ff8c00; margin-bottom: 15px;"><i class="fas fa-certificate"></i></div>
+                    <h3 style="font-size: 32px; color: #0056b3; margin-bottom: 5px;">100%</h3>
+                    <p style="color: #666;">Certification Rate</p>
+                </div>
+                <div style="text-align: center; padding: 30px; background: #f8f9fa; border-radius: 10px;">
+                    <div style="font-size: 40px; color: #0056b3; margin-bottom: 15px;"><i class="fas fa-briefcase"></i></div>
+                    <h3 style="font-size: 32px; color: #ff8c00; margin-bottom: 5px;">85%</h3>
+                    <p style="color: #666;">Job Placement</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training Programs -->
+    <section style="background: #f8f9fa; padding: 80px 0;">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Training Programs</h2>
+                <p class="section-subtitle">Choose from our comprehensive range of ICT courses</p>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px; margin-top: 50px;">
+                <!-- Computer Fundamentals -->
+                <div style="background: white; border-radius: 10px; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-top: 4px solid #0056b3;">
+                    <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #0056b3, #1e90ff); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                        <i class="fas fa-laptop-code" style="color: white; font-size: 24px;"></i>
+                    </div>
+                    <h3 style="color: #0056b3; font-size: 22px; margin-bottom: 15px;">Computer Fundamentals</h3>
+                    <p style="color: #666; margin-bottom: 20px; line-height: 1.6;">Master the basics of computer operation, Microsoft Office Suite, and essential digital skills for personal and professional use.</p>
+                    <ul style="list-style: none; padding: 0; margin-bottom: 20px;">
+                        <li style="padding: 8px 0; color: #666;"><i class="fas fa-check" style="color: #ff8c00; margin-right: 10px;"></i>Duration: 6 Weeks</li>
+                        <li style="padding: 8px 0; color: #666;"><i class="fas fa-check" style="color: #ff8c00; margin-right: 10px;"></i>Level: Beginner</li>
+                        <li style="padding: 8px 0; color: #666;"><i class="fas fa-check" style="color: #ff8c00; margin-right: 10px;"></i>Certificate: Yes</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary" style="width: 100%;">Enroll Now</a>
+                </div>
+
+                <!-- Data Analysis -->
+                <div style="background: white; border-radius: 10px; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-top: 4px solid #ff8c00;">
+                    <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #ff8c00, #ff6600); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                        <i class="fas fa-chart-line" style="color: white; font-size: 24px;"></i>
+                    </div>
+                    <h3 style="color: #ff8c00; font-size: 22px; margin-bottom: 15px;">Data Analysis</h3>
+                    <p style="color: #666; margin-bottom: 20px; line-height: 1.6;">Learn to analyze, visualize, and interpret data using Excel, Power BI, Python, and SQL. Become a certified data analyst.</p>
+                    <ul style="list-style: none; padding: 0; margin-bottom: 20px;">
+                        <li style="padding: 8px 0; color: #666;"><i class="fas fa-check" style="color: #0056b3; margin-right: 10px;"></i>Duration: 12 Weeks</li>
+                        <li style="padding: 8px 0; color: #666;"><i class="fas fa-check" style="color: #0056b3; margin-right: 10px;"></i>Level: Intermediate</li>
+                        <li style="padding: 8px 0; color: #666;"><i class="fas fa-check" style="color: #0056b3; margin-right: 10px;"></i>Certificate: Yes</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary" style="width: 100%;">Enroll Now</a>
+                </div>
+
+                <!-- Blockchain Development -->
+                <div style="background: white; border-radius: 10px; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-top: 4px solid #0056b3;">
+                    <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #0056b3, #1e90ff); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                        <i class="fas fa-cube" style="color: white; font-size: 24px;"></i>
+                    </div>
+                    <h3 style="color: #0056b3; font-size: 22px; margin-bottom: 15px;">Blockchain Development</h3>
+                    <p style="color: #666; margin-bottom: 20px; line-height: 1.6;">Master blockchain technology, smart contracts, and decentralized application development with Solidity and Web3.</p>
+                    <ul style="list-style: none; padding: 0; margin-bottom: 20px;">
+                        <li style="padding: 8px 0; color: #666;"><i class="fas fa-check" style="color: #ff8c00; margin-right: 10px;"></i>Duration: 16 Weeks</li>
+                        <li style="padding: 8px 0; color: #666;"><i class="fas fa-check" style="color: #ff8c00; margin-right: 10px;"></i>Level: Advanced</li>
+                        <li style="padding: 8px 0; color: #666;"><i class="fas fa-check" style="color: #ff8c00; margin-right: 10px;"></i>Certificate: Yes</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary" style="width: 100%;">Enroll Now</a>
+                </div>
+
+                <!-- Crypto Development -->
+                <div style="background: white; border-radius: 10px; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-top: 4px solid #ff8c00;">
+                    <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #ff8c00, #ff6600); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                        <i class="fab fa-bitcoin" style="color: white; font-size: 24px;"></i>
+                    </div>
+                    <h3 style="color: #ff8c00; font-size: 22px; margin-bottom: 15px;">Crypto Development</h3>
+                    <p style="color: #666; margin-bottom: 20px; line-height: 1.6;">Learn cryptocurrency trading, DeFi protocols, and how to build crypto applications and wallets.</p>
+                    <ul style="list-style: none; padding: 0; margin-bottom: 20px;">
+                        <li style="padding: 8px 0; color: #666;"><i class="fas fa-check" style="color: #0056b3; margin-right: 10px;"></i>Duration: 14 Weeks</li>
+                        <li style="padding: 8px 0; color: #666;"><i class="fas fa-check" style="color: #0056b3; margin-right: 10px;"></i>Level: Advanced</li>
+                        <li style="padding: 8px 0; color: #666;"><i class="fas fa-check" style="color: #0056b3; margin-right: 10px;"></i>Certificate: Yes</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary" style="width: 100%;">Enroll Now</a>
+                </div>
+
+                <!-- Cybersecurity -->
+                <div style="background: white; border-radius: 10px; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-top: 4px solid #0056b3;">
+                    <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #0056b3, #1e90ff); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                        <i class="fas fa-shield-alt" style="color: white; font-size: 24px;"></i>
+                    </div>
+                    <h3 style="color: #0056b3; font-size: 22px; margin-bottom: 15px;">Cybersecurity</h3>
+                    <p style="color: #666; margin-bottom: 20px; line-height: 1.6;">Protect digital assets with ethical hacking, network security, and advanced cybersecurity practices.</p>
+                    <ul style="list-style: none; padding: 0; margin-bottom: 20px;">
+                        <li style="padding: 8px 0; color: #666;"><i class="fas fa-check" style="color: #ff8c00; margin-right: 10px;"></i>Duration: 16 Weeks</li>
+                        <li style="padding: 8px 0; color: #666;"><i class="fas fa-check" style="color: #ff8c00; margin-right: 10px;"></i>Level: Advanced</li>
+                        <li style="padding: 8px 0; color: #666;"><i class="fas fa-check" style="color: #ff8c00; margin-right: 10px;"></i>Certificate: Yes</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary" style="width: 100%;">Enroll Now</a>
+                </div>
+
+                <!-- Graphic Design -->
+                <div style="background: white; border-radius: 10px; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-top: 4px solid #ff8c00;">
+                    <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #ff8c00, #ff6600); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                        <i class="fas fa-palette" style="color: white; font-size: 24px;"></i>
+                    </div>
+                    <h3 style="color: #ff8c00; font-size: 22px; margin-bottom: 15px;">Graphic Design</h3>
+                    <p style="color: #666; margin-bottom: 20px; line-height: 1.6;">Master Adobe Creative Suite, branding, and digital design to create stunning visual content.</p>
+                    <ul style="list-style: none; padding: 0; margin-bottom: 20px;">
+                        <li style="padding: 8px 0; color: #666;"><i class="fas fa-check" style="color: #0056b3; margin-right: 10px;"></i>Duration: 10 Weeks</li>
+                        <li style="padding: 8px 0; color: #666;"><i class="fas fa-check" style="color: #0056b3; margin-right: 10px;"></i>Level: Intermediate</li>
+                        <li style="padding: 8px 0; color: #666;"><i class="fas fa-check" style="color: #0056b3; margin-right: 10px;"></i>Certificate: Yes</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary" style="width: 100%;">Enroll Now</a>
+                </div>
+
+                <!-- UI/UX Design -->
+                <div style="background: white; border-radius: 10px; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-top: 4px solid #0056b3;">
+                    <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #0056b3, #1e90ff); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                        <i class="fas fa-mobile-alt" style="color: white; font-size: 24px;"></i>
+                    </div>
+                    <h3 style="color: #0056b3; font-size: 22px; margin-bottom: 15px;">UI/UX Design</h3>
+                    <p style="color: #666; margin-bottom: 20px; line-height: 1.6;">Design beautiful and user-friendly interfaces using Figma, Adobe XD, and modern design principles.</p>
+                    <ul style="list-style: none; padding: 0; margin-bottom: 20px;">
+                        <li style="padding: 8px 0; color: #666;"><i class="fas fa-check" style="color: #ff8c00; margin-right: 10px;"></i>Duration: 12 Weeks</li>
+                        <li style="padding: 8px 0; color: #666;"><i class="fas fa-check" style="color: #ff8c00; margin-right: 10px;"></i>Level: Intermediate</li>
+                        <li style="padding: 8px 0; color: #666;"><i class="fas fa-check" style="color: #ff8c00; margin-right: 10px;"></i>Certificate: Yes</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary" style="width: 100%;">Enroll Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Our Academy -->
+    <section style="padding: 80px 0;">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose ChristDivine Academy?</h2>
+                <p class="section-subtitle">Experience the difference in quality training</p>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 50px;">
+                <div style="text-align: center; padding: 30px;">
+                    <i class="fas fa-chalkboard-teacher" style="font-size: 50px; color: #ff8c00; margin-bottom: 20px;"></i>
+                    <h4 style="color: #0056b3; margin-bottom: 10px;">Expert Instructors</h4>
+                    <p style="color: #666;">Learn from industry professionals with years of practical experience</p>
+                </div>
+                <div style="text-align: center; padding: 30px;">
+                    <i class="fas fa-hands-helping" style="font-size: 50px; color: #0056b3; margin-bottom: 20px;"></i>
+                    <h4 style="color: #0056b3; margin-bottom: 10px;">Hands-on Training</h4>
+                    <p style="color: #666;">Practice with real projects and get job-ready skills</p>
+                </div>
+                <div style="text-align: center; padding: 30px;">
+                    <i class="fas fa-certificate" style="font-size: 50px; color: #ff8c00; margin-bottom: 20px;"></i>
+                    <h4 style="color: #0056b3; margin-bottom: 10px;">Industry Certification</h4>
+                    <p style="color: #666;">Receive recognized certificates upon course completion</p>
+                </div>
+                <div style="text-align: center; padding: 30px;">
+                    <i class="fas fa-laptop" style="font-size: 50px; color: #0056b3; margin-bottom: 20px;"></i>
+                    <h4 style="color: #0056b3; margin-bottom: 10px;">Modern Facilities</h4>
+                    <p style="color: #666;">Train with the latest equipment and technology</p>
+                </div>
+                <div style="text-align: center; padding: 30px;">
+                    <i class="fas fa-user-friends" style="font-size: 50px; color: #ff8c00; margin-bottom: 20px;"></i>
+                    <h4 style="color: #0056b3; margin-bottom: 10px;">Small Class Sizes</h4>
+                    <p style="color: #666;">Personalized attention with limited students per class</p>
+                </div>
+                <div style="text-align: center; padding: 30px;">
+                    <i class="fas fa-briefcase" style="font-size: 50px; color: #0056b3; margin-bottom: 20px;"></i>
+                    <h4 style="color: #0056b3; margin-bottom: 10px;">Job Placement Support</h4>
+                    <p style="color: #666;">Career guidance and job placement assistance</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Your ICT Journey?</h2>
+                <p>Enroll today and transform your career with industry-relevant skills</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-lg">Enroll Now</a>
+                    <a href="contact.html" class="btn btn-secondary btn-lg">Request Info</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-col">
+                        <img src="cd_logo_white.png" alt="logo" height="50px" width="350px">
+                        <div class="footer-social">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="main-business.html">Our Services</a></li>
+                            <!-- <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="blog.html">Blog</a></li> -->
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>Our Businesses</h4>
+                        <ul>
+                            <li><a href="main-business.html">Christ Divine Communication</a></li>
+                            <li><a href="academy.html">ChristDivine Academy</a></li>
+                            <li><a href="engineering.html">ChristDivine Engineering</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>Contact Info</h4>
+                        <ul class="contact-info">
+                            <li><i class="fas fa-map-marker-alt"></i> No 54 Maduka Plaza, Arroma Junction, Awka, Anambra State, Nigeria</li>
+                            <li><i class="fas fa-phone"></i> +234 803 790 8837</li>
+                            <li><i class="fas fa-envelope"></i> info@christdivine.com</li>
+                            <li><i class="fas fa-clock"></i> Mon - Sat: 8:00 AM - 6:00 PM</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 Christ Divine Communication Nig LTD. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
