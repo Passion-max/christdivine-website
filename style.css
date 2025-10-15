@@ -959,6 +959,47 @@ select.form-control[multiple] {
     color: var(--white);
 }
 
+/* Engineering Styles */
+ /* Why Choose Us */
+ .chooseUsCard1 {
+    text-align: center;
+    padding: 30px;
+    animation: fadeScale 1s ease-out forwards;
+    opacity: 0;
+    transform: scale(0.95);
+}
+
+@keyframes fadeScale {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.chooseUsCard1:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+.chooseUsCard2 {
+    text-align: center;
+    padding: 30px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideUpFade 0.8s ease-out forwards;
+}
+
+.chooseUsCard2:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 25px rgba(0, 86, 179, 0.3);
+}
+
+@keyframes slideUpFade {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /* === Responsive Design === */
 @media (max-width: 768px) {
     .top-bar {
