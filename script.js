@@ -3,6 +3,7 @@
 // ===== Mobile Menu Toggle =====
 const mobileMenuToggle = document.getElementById('mobileMenuToggle');
 const navMenu = document.getElementById('navMenu');
+const navItems = document.querySelectorAll('.nav-item');
 
 if (mobileMenuToggle) {
     mobileMenuToggle.addEventListener('click', function() {
@@ -12,6 +13,27 @@ if (mobileMenuToggle) {
         icon.classList.toggle('fa-times');
     });
 }
+
+window.addEventListener('DOMContentLoaded', () => {
+  const currentPath = window.location.pathname.split('/').pop();
+  navItems.forEach(item => {
+    const linkPath = item.getAttribute('href');
+    if (linkPath === currentPath) {
+      item.classList.add('active');
+    } else {
+      item.classList.remove('active');
+    }
+  });
+});
+
+
+navItems.forEach(item => {
+  item.addEventListener('click', () => {
+    navItems.forEach(btn => btn.classList.remove('active'));
+    item.classList.add('active');
+  });
+});
+
 
 // ===== Dropdown Menu for Mobile =====
 const dropdowns = document.querySelectorAll('.dropdown');
@@ -292,11 +314,16 @@ images.forEach(img => imageObserver.observe(img));
 
 // ===== Animation on Scroll =====
 const animateOnScroll = () => {
-    const elements = document.querySelectorAll('.division-card, .feature-box, .testimonial-card');
+    const elements = document.querySelectorAll('.division-card, .feature-box, .testimonial-card, .scroll-animate');
     
     elements.forEach(element => {
         const elementTop = element.getBoundingClientRect().top;
         const elementBottom = element.getBoundingClientRect().bottom;
+        const rect = element.getBoundingClientRect();
+
+        if (rect < window.innerHeight - 50) {
+            element.classList.add('visible')
+        }
         
         if (elementTop < window.innerHeight - 100 && elementBottom > 0) {
             element.style.opacity = '1';

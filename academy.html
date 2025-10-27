@@ -39,10 +39,10 @@
                     </button>
                     
                     <ul class="nav-menu" id="navMenu">
-                        <li><a href="index.html" class="active">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="index.html" class="nav-item active">Home</a></li>
+                        <li><a href="about.html" class="nav-item">About Us</a></li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle">Our Businesses <i class="fas fa-chevron-down"></i></a>
+                            <a href="#" class="dropdown-toggle nav-item">Our Businesses <i class="fas fa-chevron-down"></i></a>
                             <ul class="dropdown-menu">
                                 <li><a href="main-business.html">Christ Divine Communication</a></li>
                                 <li><a href="academy.html">ChristDivine Academy</a></li>
@@ -51,7 +51,7 @@
                         </li>
                         <!-- <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="blog.html">Blog</a></li> -->
-                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="contact.html" class="nav-item">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
@@ -60,7 +60,7 @@
 
     <!-- Page Header -->
     <section style="background: linear-gradient(135deg, #ff8c00 0%, #ff6600 100%); padding: 100px 0; text-align: center; color: white;">
-        <div class="container">
+        <div class="container scroll-animate from-bottom">
             <h1 style="font-size: 48px; margin-bottom: 15px;"><i class="fas fa-graduation-cap"></i> ChristDivine Academy</h1>
             <p style="font-size: 20px;">Transform Your Career with Professional ICT Training</p>
         </div>
@@ -76,7 +76,7 @@
                 </p>
             </div>
             
-            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; margin-top: 50px;">
+            <div class="scroll-animate from-left welcome-grid">
                 <div style="text-align: center; padding: 30px; background: #f8f9fa; border-radius: 10px;">
                     <div style="font-size: 40px; color: #ff8c00; margin-bottom: 15px;"><i class="fas fa-users"></i></div>
                     <h3 style="font-size: 32px; color: #0056b3; margin-bottom: 5px;">500+</h3>
@@ -111,7 +111,7 @@
             
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px; margin-top: 50px;">
                 <!-- Computer Fundamentals -->
-                <div style="background: white; border-radius: 10px; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-top: 4px solid #0056b3;">
+                <div class="academy-item" style="background: white; border-radius: 10px; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-top: 4px solid #0056b3;">
                     <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #0056b3, #1e90ff); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
                         <i class="fas fa-laptop-code" style="color: white; font-size: 24px;"></i>
                     </div>
@@ -126,7 +126,7 @@
                 </div>
 
                 <!-- Data Analysis -->
-                <div style="background: white; border-radius: 10px; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-top: 4px solid #ff8c00;">
+                <div class="academy-item" style="background: white; border-radius: 10px; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-top: 4px solid #ff8c00;">
                     <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #ff8c00, #ff6600); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
                         <i class="fas fa-chart-line" style="color: white; font-size: 24px;"></i>
                     </div>
@@ -141,7 +141,7 @@
                 </div>
 
                 <!-- Blockchain Development -->
-                <div style="background: white; border-radius: 10px; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-top: 4px solid #0056b3;">
+                <div class="academy-item" style="background: white; border-radius: 10px; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-top: 4px solid #0056b3;">
                     <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #0056b3, #1e90ff); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
                         <i class="fas fa-cube" style="color: white; font-size: 24px;"></i>
                     </div>
@@ -156,7 +156,7 @@
                 </div>
 
                 <!-- Crypto Development -->
-                <div style="background: white; border-radius: 10px; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-top: 4px solid #ff8c00;">
+                <div class="academy-item" style="background: white; border-radius: 10px; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-top: 4px solid #ff8c00;">
                     <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #ff8c00, #ff6600); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
                         <i class="fab fa-bitcoin" style="color: white; font-size: 24px;"></i>
                     </div>
@@ -171,7 +171,7 @@
                 </div>
 
                 <!-- Cybersecurity -->
-                <div style="background: white; border-radius: 10px; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-top: 4px solid #0056b3;">
+                <div class="academy-item" style="background: white; border-radius: 10px; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-top: 4px solid #0056b3;">
                     <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #0056b3, #1e90ff); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
                         <i class="fas fa-shield-alt" style="color: white; font-size: 24px;"></i>
                     </div>
@@ -186,7 +186,7 @@
                 </div>
 
                 <!-- Graphic Design -->
-                <div style="background: white; border-radius: 10px; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-top: 4px solid #ff8c00;">
+                <div class="academy-item" style="background: white; border-radius: 10px; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-top: 4px solid #ff8c00;">
                     <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #ff8c00, #ff6600); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
                         <i class="fas fa-palette" style="color: white; font-size: 24px;"></i>
                     </div>
@@ -201,7 +201,7 @@
                 </div>
 
                 <!-- UI/UX Design -->
-                <div style="background: white; border-radius: 10px; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-top: 4px solid #0056b3;">
+                <div class="academy-item" style="background: white; border-radius: 10px; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-top: 4px solid #0056b3;">
                     <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #0056b3, #1e90ff); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
                         <i class="fas fa-mobile-alt" style="color: white; font-size: 24px;"></i>
                     </div>
@@ -214,6 +214,8 @@
                     </ul>
                     <a href="contact.html" class="btn btn-primary" style="width: 100%;">Enroll Now</a>
                 </div>
+
+                <!-- Web Developer -->
             </div>
         </div>
     </section>
@@ -226,33 +228,33 @@
                 <p class="section-subtitle">Experience the difference in quality training</p>
             </div>
             
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 50px;">
-                <div style="text-align: center; padding: 30px;">
+            <div class="academy-choose-grid">
+                <div class="scroll-animate from-right" style="text-align: center; padding: 30px;">
                     <i class="fas fa-chalkboard-teacher" style="font-size: 50px; color: #ff8c00; margin-bottom: 20px;"></i>
                     <h4 style="color: #0056b3; margin-bottom: 10px;">Expert Instructors</h4>
                     <p style="color: #666;">Learn from industry professionals with years of practical experience</p>
                 </div>
-                <div style="text-align: center; padding: 30px;">
+                <div class="scroll-animate from-right" style="text-align: center; padding: 30px;">
                     <i class="fas fa-hands-helping" style="font-size: 50px; color: #0056b3; margin-bottom: 20px;"></i>
                     <h4 style="color: #0056b3; margin-bottom: 10px;">Hands-on Training</h4>
                     <p style="color: #666;">Practice with real projects and get job-ready skills</p>
                 </div>
-                <div style="text-align: center; padding: 30px;">
+                <div class="scroll-animate from-right" style="text-align: center; padding: 30px;">
                     <i class="fas fa-certificate" style="font-size: 50px; color: #ff8c00; margin-bottom: 20px;"></i>
                     <h4 style="color: #0056b3; margin-bottom: 10px;">Industry Certification</h4>
                     <p style="color: #666;">Receive recognized certificates upon course completion</p>
                 </div>
-                <div style="text-align: center; padding: 30px;">
+                <div class="scroll-animate from-left" style="text-align: center; padding: 30px;">
                     <i class="fas fa-laptop" style="font-size: 50px; color: #0056b3; margin-bottom: 20px;"></i>
                     <h4 style="color: #0056b3; margin-bottom: 10px;">Modern Facilities</h4>
                     <p style="color: #666;">Train with the latest equipment and technology</p>
                 </div>
-                <div style="text-align: center; padding: 30px;">
+                <div class="scroll-animate from-left" style="text-align: center; padding: 30px;">
                     <i class="fas fa-user-friends" style="font-size: 50px; color: #ff8c00; margin-bottom: 20px;"></i>
                     <h4 style="color: #0056b3; margin-bottom: 10px;">Small Class Sizes</h4>
                     <p style="color: #666;">Personalized attention with limited students per class</p>
                 </div>
-                <div style="text-align: center; padding: 30px;">
+                <div class="scroll-animate from-left" style="text-align: center; padding: 30px;">
                     <i class="fas fa-briefcase" style="font-size: 50px; color: #0056b3; margin-bottom: 20px;"></i>
                     <h4 style="color: #0056b3; margin-bottom: 10px;">Job Placement Support</h4>
                     <p style="color: #666;">Career guidance and job placement assistance</p>
@@ -264,7 +266,7 @@
     <!-- CTA -->
     <section class="cta-section">
         <div class="container">
-            <div class="cta-content">
+            <div class="cta-content scroll-animate from-bottom">
                 <h2>Ready to Start Your ICT Journey?</h2>
                 <p>Enroll today and transform your career with industry-relevant skills</p>
                 <div class="cta-buttons">

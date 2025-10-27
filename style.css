@@ -842,6 +842,13 @@ select.form-control[multiple] {
     background: linear-gradient(135deg, var(--primary-orange), var(--dark-orange));
 }
 
+/* Academy */
+.academy-item:hover {
+    border-color: var(--primary-orange);
+    transform: translateY(-8px);
+    border: 2px solid transparent;
+}
+
 /* Form validation styles */
 .form-control.error {
     border-color: #ff6600;
@@ -929,10 +936,22 @@ select.form-control[multiple] {
 
 .map-wrapper {
     background: var(--white);
-    padding: 20px;
+    padding: 0px 0px;
     border-radius: 10px;
     box-shadow: 0 5px 15px var(--shadow);
     height: 400px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-gray);
+}
+
+iframe {
+    border-radius: 10px;
+    box-shadow: 0 5px 15px var(--shadow);
+    height: 400px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1000,8 +1019,113 @@ select.form-control[multiple] {
     }
 }
 
+/* Animation Stlyes */
+.scroll-animate {
+    opacity: 0;
+    transform: translateY(0);
+    transition: all 1s ease-out;
+}
+.from-left{
+    transform: translateX(-100px);
+}
+.from-right {
+    transform: translateX(100px);
+}
+.from-top {
+    transform: translateY(-100px);
+}
+.from-bottom {
+    transform: translateY(100px)
+}
+/* About Page */
+.overview-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+.mission-grid {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 30px;
+}
+.core-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; 
+    margin-top: 50px;
+}
+.choose-grid{
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 30px; 
+    margin-top: 50px;
+}
+/* Academy Page */
+.welcome-grid {
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 30px; 
+    margin-top: 50px;
+}
+.academy-choose-grid {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; 
+    margin-top: 50px;
+}
+/* Engineering Page */
+.services-grid {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 30px; 
+    margin-top: 50px;
+}
+.eng-choose-grid {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; 
+    margin-top: 50px;
+}
+.eng-overview-grid {
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 30px; 
+    margin-top: 50px;
+}
+.eng-info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    text-align: center;
+}
 /* === Responsive Design === */
 @media (max-width: 768px) {
+    body {
+      overflow-x: hidden;
+    }
+    .overview-grid,
+    .mission-grid,
+    .core-grid,
+    .choose-grid,
+    .welcome-grid,
+    .academy-choose-grid,
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .eng-choose-grid,
+    .eng-overview-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px
+    }
+
+    .eng-info-grid {
+        grid-template-columns: 2fr 1fr;
+        gap: 30px;
+    }
+
     .top-bar {
         display: none;
     }

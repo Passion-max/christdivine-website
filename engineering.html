@@ -39,10 +39,10 @@
                     </button>
                     
                     <ul class="nav-menu" id="navMenu">
-                        <li><a href="index.html" class="active">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="index.html" class="nav-item active">Home</a></li>
+                        <li><a href="about.html" class="nav-item">About Us</a></li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle">Our Businesses <i class="fas fa-chevron-down"></i></a>
+                            <a href="#" class="dropdown-toggle nav-item">Our Businesses <i class="fas fa-chevron-down"></i></a>
                             <ul class="dropdown-menu">
                                 <li><a href="main-business.html">Christ Divine Communication</a></li>
                                 <li><a href="academy.html">ChristDivine Academy</a></li>
@@ -51,7 +51,7 @@
                         </li>
                         <!-- <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="blog.html">Blog</a></li> -->
-                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="contact.html" class="nav-item">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
@@ -60,7 +60,7 @@
 
     <!-- Page Header -->
     <section style="background: linear-gradient(135deg, #0056b3 0%, #ff8c00 100%); padding: 100px 0; text-align: center; color: white;">
-        <div class="container">
+        <div class="container scroll-animate from-bottom
             <h1 style="font-size: 48px; margin-bottom: 15px;">
                 <i class="fas fa-hard-hat"></i> ChristDivine Engineering
             </h1>
@@ -82,7 +82,7 @@
                 </p>
             </div>
             
-            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; margin-top: 50px;">
+            <div class="scroll-animate from-right eng-overview-grid">
                 <div style="text-align: center; padding: 30px; background: #f8f9fa; border-radius: 10px;">
                     <div style="font-size: 40px; color: #ff8c00; margin-bottom: 15px;">
                         <i class="fas fa-truck"></i>
@@ -126,7 +126,7 @@
                 <p class="section-subtitle">Comprehensive Solutions for Your Construction Needs</p>
             </div>
             
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 50px;">
+            <div class="services-grid">
                 <div class="service-card">
                     <div class="service-header">
                         <i class="fas fa-truck-loading" style="font-size: 50px; margin-bottom: 15px;"></i>
@@ -336,7 +336,7 @@
                 <p class="section-subtitle">Your Success Is Our Priority</p>
             </div>
             
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 50px;">
+            <div class="eng-choose-grid">
                 <div class="chooseUsCard1" style="text-align: center; padding: 30px;">
                     <i class="fas fa-certificate" style="font-size: 50px; color: #ff8c00; margin-bottom: 20px;"></i>
                     <h4 style="color: #0056b3; margin-bottom: 10px; font-size: 20px;">Certified Quality</h4>
@@ -463,20 +463,20 @@
     <!-- Contact Info -->
     <section style="background: linear-gradient(135deg, #0056b3 0%, #ff8c00 100%); padding: 60px 0; color: white;">
         <div class="container">
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; text-align: center;">
-                <div>
+            <div class="eng-info-grid">
+                <div class="scroll-animate from-left">
                     <i class="fas fa-phone" style="font-size: 40px; margin-bottom: 15px;"></i>
                     <h4 style="font-size: 20px; margin-bottom: 10px;">Call Us</h4>
                     <p style="font-size: 18px;">+234 803 790 8837</p>
                 </div>
                 
-                <div>
+                <div class="scroll-animate from-bottom">
                     <i class="fas fa-envelope" style="font-size: 40px; margin-bottom: 15px;"></i>
                     <h4 style="font-size: 20px; margin-bottom: 10px;">Email Us</h4>
                     <p style="font-size: 18px;">engineering@christdivine.com</p>
                 </div>
                 
-                <div>
+                <div class="scroll-animate from-right">
                     <i class="fas fa-map-marker-alt" style="font-size: 40px; margin-bottom: 15px;"></i>
                     <h4 style="font-size: 20px; margin-bottom: 10px;">Visit Us</h4>
                     <p style="font-size: 18px;">Awka, Anambra State State</p>
