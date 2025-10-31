@@ -219,6 +219,7 @@ ul {
 /* === Hero Section === */
 .hero {
     position: relative;
+    /* top: -80px; */
     height: 600px;
     overflow: hidden;
     background: linear-gradient(135deg, var(--primary-blue) 0%, var(--light-blue) 100%);
@@ -789,14 +790,15 @@ select.form-control[multiple] {
 }
 
 .service-header {
-    background: linear-gradient(135deg, var(--primary-blue), var(--light-blue));
+    background-image: url("./img_02-175x197.jpg.svg");
     padding: 30px;
-    color: var(--white);
+    color:  var(--dark-orange);
     text-align: center;
 }
 
 .service-card:nth-child(even) .service-header {
-    background: linear-gradient(135deg, var(--primary-orange), var(--dark-orange));
+    background: url("./img_01-2-449x204.jpg.png");
+    color: var(--white);
 }
 
 .service-body {
@@ -826,21 +828,21 @@ select.form-control[multiple] {
 }
 
 .product-icon {
-    width: 80px;
-    height: 80px;
+    border-radius: 8%;
+    height: 200px;
+    width: 300px;
+    position: center;
     margin: 0 auto 20px;
-    background: linear-gradient(135deg, var(--primary-blue), var(--light-blue));
-    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 36px;
-    color: var(--white);
+    color: var(--white); 
 }
 
-.product-item:nth-child(even) .product-icon {
+/* .product-item:nth-child(even) .product-icon {
     background: linear-gradient(135deg, var(--primary-orange), var(--dark-orange));
-}
+} */
 
 /* Academy */
 .academy-item:hover {
@@ -1075,6 +1077,41 @@ iframe {
     margin-top: 50px;
 }
 /* Engineering Page */
+.EngBackgroundHome {
+    background-image: url('./photo_construction-workers-surveying-site\ 1.svg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+    top: -90px;
+    color: white;
+}
+.EngBackgroundMain {
+    background-image: url('./image.svg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+    color: black;
+}
+
+.ConstructionBG {
+    background-image: url('./wall-textures-background.png');
+    padding: 80px 0px;
+}
+
+.EngChooseBg {
+ background-image: url("./image.svg");
+ padding: 80px 0;
+}
+
 .services-grid {
     display: grid; 
     grid-template-columns: 1fr 1fr; 
@@ -1104,6 +1141,13 @@ iframe {
     body {
       overflow-x: hidden;
     }
+
+    .product-icon {
+        height: 400px;
+        width: 100%;
+        border-radius: 20px;
+    }
+
     .overview-grid,
     .mission-grid,
     .core-grid,
