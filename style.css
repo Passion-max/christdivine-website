@@ -246,6 +246,18 @@ ul {
     visibility: visible;
 }
 
+.comm-hero {
+    background-image: url('./homewallpaper.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    /* height: 100vh; */
+    /* padding: 100px 0; */
+    /* text-align: center; */
+    /* position: relative; */
+    /* top: -90px; */
+}
+
 /* .hero-slide:nth-child(2) {
     background: linear-gradient(135deg, var(--primary-orange) 0%, var(--dark-orange) 100%);
 } */
@@ -596,6 +608,17 @@ section {
     line-height: 1.8;
 }
 
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.testimonial-author > div:last-child {
+    display: flex;
+    flex-direction: column;
+}
+
 .testimonial-author h5 {
     color: var(--primary-blue);
     font-size: 18px;
@@ -791,8 +814,11 @@ select.form-control[multiple] {
 
 .service-header {
     background-image: url("./img_02-175x197.jpg.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     padding: 30px;
-    color:  var(--dark-orange);
+    color:  var(--white);
     text-align: center;
 }
 
@@ -974,8 +1000,11 @@ iframe {
 
 /* === Page Header Styles === */
 .page-header {
-    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--light-blue) 100%);
-    padding: 80px 0;
+    background-image: url('./Background.png');
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    padding: 90px 0;
     text-align: center;
     color: var(--white);
 }
@@ -1064,6 +1093,27 @@ iframe {
     margin-top: 50px;
 }
 /* Academy Page */
+.academyHomeBg {
+    background-image: url('./Homewallpaper2.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+     height: 100vh;
+     padding: 100px 0;
+    top: -90px;
+}
+.AcademyMainBg {
+    background-image: url('./academyBg.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 55vh;
+    width: 100%;
+    padding: 100px 0;
+    text-align: center;
+    color: white;
+}
+
 .welcome-grid {
     display: grid; 
     grid-template-columns: repeat(4, 1fr); 
@@ -1078,15 +1128,11 @@ iframe {
 }
 /* Engineering Page */
 .EngBackgroundHome {
-    background-image: url('./photo_construction-workers-surveying-site\ 1.svg');
+    background-image: url('./EngBg.png');
     background-size: cover;
     background-position: center;
     height: 100vh;
-    display: flex;
-    justify-content: center;
     padding: 100px 0;
-    text-align: center;
-    position: relative;
     top: -90px;
     color: white;
 }
@@ -1094,6 +1140,7 @@ iframe {
     background-image: url('./image.svg');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     padding: 100px 0;
@@ -1104,11 +1151,17 @@ iframe {
 
 .ConstructionBG {
     background-image: url('./wall-textures-background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     padding: 80px 0px;
 }
 
 .EngChooseBg {
  background-image: url("./image.svg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ /* background-position: center; */
  padding: 80px 0;
 }
 
@@ -1140,6 +1193,17 @@ iframe {
 @media (max-width: 768px) {
     body {
       overflow-x: hidden;
+    }
+
+    .EngBackgroundMain,
+    .AcademyMainBg,
+    .page-header {
+        background-position: top;
+        height: 60vh;
+    }
+
+    .page-header {
+        padding: 9rem 0rem;
     }
 
     .product-icon {
