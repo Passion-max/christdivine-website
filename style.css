@@ -30,6 +30,7 @@ body {
     line-height: 1.6;
     color: var(--dark-gray);
     background-color: var(--white);
+    overflow-x: hidden;
 }
 
 img {
@@ -1098,8 +1099,8 @@ iframe {
     background-size: cover;
     background-position: center;
     color: white;
-     height: 100vh;
-     padding: 100px 0;
+    height: 100vh;
+    padding: 100px 0;
     top: -90px;
 }
 .AcademyMainBg {
@@ -1112,6 +1113,15 @@ iframe {
     padding: 100px 0;
     text-align: center;
     color: white;
+}
+
+.title {
+    font-size: 48px; 
+    margin-bottom: 15px;
+}
+
+.Subtitle {
+    font-size: 20px;
 }
 
 .welcome-grid {
@@ -1195,15 +1205,29 @@ iframe {
       overflow-x: hidden;
     }
 
+    .EngBackgroundHome,
+    .academyHomeBg {
+        background-position: top;
+        height: 81vh;
+        padding: 9rem 0rem;
+        align-items: center;
+        display: flex;
+    }
+
     .EngBackgroundMain,
-    .AcademyMainBg,
-    .page-header {
+    .AcademyMainBg {
         background-position: top;
         height: 60vh;
+        align-items: center;
+        display: flex;
     }
 
     .page-header {
-        padding: 9rem 0rem;
+        background-position: top;
+        height: 40vh;
+        padding-top: 10rem 0rem;
+        align-items: center;
+        display: flex;
     }
 
     .product-icon {
@@ -1281,6 +1305,16 @@ iframe {
     
     .hero-title {
         font-size: 32px;
+        
+    }
+
+    .title {
+        font-size: 32px;
+        margin-bottom: 5px;
+    }
+
+    .Subtitle {
+       font-size: 14px;
     }
 
     .hero-content {
@@ -1331,11 +1365,62 @@ iframe {
     }
 }
 
+@media (max-width: 720px) {
+    body {
+      overflow-x: hidden;
+    }
+
+    .EngBackgroundMain {
+        background-size: contain cover;
+        background-position: center top;
+        height: 25vh;
+        align-items: center;
+        display: flex;
+    }
+    .AcademyMainBg {
+        background-size: contain cover;
+        background-position: center top;
+        height: 30vh;
+        padding-top: 10rem 0rem;
+        align-items: center;
+        display: flex;
+  }
+
+    .page-header {
+        background-size: cover;
+        background-position: center top;
+        height: 25vh;
+        padding-top: 12rem 0rem;
+        align-items: center;
+        display: flex;
+    }
+
+    .title {
+        font-size: 35px;
+    }
+
+    .Subtitle {
+        font-size: 12px;
+    }
+}
+
 @media (max-width: 480px) {
     .divisions-grid,
     .features-grid,
     .testimonials-grid {
         grid-template-columns: 1fr;
+    }
+
+    .hero-title {
+        font-size: 30px;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .Subtitle {
+        font-size: 12px;
     }
     
     .hero-controls button {
@@ -1346,5 +1431,35 @@ iframe {
 
     .top-bar {
         display: hidden;
+    }
+
+    body {
+      overflow-x: hidden;
+    }
+
+    .EngBackgroundMain {
+    background-size: contain cover;
+    background-position: center top;
+    height: 50vh;
+    align-items: center;
+    display: flex;
+    }
+    .AcademyMainBg {
+    background-size: cover;
+    background-position: center top;
+    height: 36vh;
+    padding-top: 10rem 0rem;
+    align-items: center;
+    display: flex;
+  }
+
+    .page-header {
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+        height: 20vh;
+        padding-top: 10rem 0rem;
+        align-items: center;
+        display: flex;
     }
 }
